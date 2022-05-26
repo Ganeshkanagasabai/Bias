@@ -1,0 +1,42 @@
+<p style="color: green"><%= notice %></p>
+
+<%# <%= render @item %> 
+ <strong>Name:</strong>
+    <%= @item.name %>
+ 
+
+  <p>
+    <strong>Description:</strong>
+    <%= @item.description %>
+  </p>
+  
+    <p>
+    <strong>Example:</strong>
+    <%= @item.example %>
+  </p>
+
+
+  <p>
+    
+    <%= image_tag @item.image %>
+  </p>
+
+
+
+
+<strong><h2><%=@tags.count%> Tags are present in this item</h2></strong>  
+<%# <div class = "/tags"> %>
+ 
+ <%= render @tags%> 
+ 
+
+
+<div class="show">
+  <%= link_to "Edit this item", edit_item_path(@item),class:"btn btn-secondary" %> |
+  <%= link_to "Back to items", items_path,class: "btn btn-success" %>
+
+  <%= button_to "Destroy this item", @item, method: :delete ,class: "btn btn-danger"%>
+</div>
+
+
+

@@ -1,0 +1,65 @@
+
+<div class ="parent">
+<div class = "child">
+<%  item.tags.each do |tag| %>
+  
+    <% if tag.color_code=="1" %>
+    
+      <div class = "a">
+      </div>
+    <% elsif tag.color_code=="2" %>
+        <div class = "b">
+        </div>
+    
+    <% elsif tag.color_code=="3" %>
+        <div class = "c">
+        </div>
+
+    <% elsif tag.color_code=="4" %>
+        <div class = "d">
+        </div>
+
+    <% else %>
+        <div class = "e">
+        </div>   
+    <% end %>
+
+
+
+<% end %>
+</div>
+ <%= link_to item do %>
+<div class ="indexinner">
+  <div class= 'name'>
+    <%# <strong>Name:</strong> %>
+    <strong><%=  item.name %></strong>
+ </div>
+
+  <p class="descriptionbox">
+    <%# <strong>Description:</strong> %>
+    <%= item.description %>
+  </p>
+  
+  <p class ="image">
+    
+    <%= image_tag item.image %>
+  </p>
+
+    <p class = 'example'>
+    <%# <strong>Example:</strong> %>
+    <%= item.example %>
+  </p>
+
+
+  
+
+  <%# <div id=" rambro"> %>
+ <%# <%= render item.tags%> 
+ <%# </div> %>
+
+ <%# <%= link_to "Show this item",item,class:"btn btn-primary" %> 
+ 
+</div>
+<% end %>
+
+</div>

@@ -1,0 +1,54 @@
+<p style="color: green"><%= notice %></p>
+<div class ='all'>
+<div class ="title">
+<div class='number'>50</div><div class ="bias1"<h2> <strong> COGNITIVE BIASES</strong></div> &nbsp;<div class='bias2'>TO BE AWARE OF</div><br><div class= "bias3"> SO YOU CAN BE THE VERY BEST VERSION OF YOU</div>
+</div>
+
+<div class= 'total'>
+<div class ='legend'>
+
+<div class = 'legend1'>
+<strong>Color_code:1</strong>
+</div>
+
+<div class = 'legend2'>
+  <strong>Color_code:2</strong>
+</div>
+
+<div class = 'legend3'>
+<strong>Color_code:3</strong>
+</div>
+
+<div class = 'legend4'>
+<strong>Color_code:4</strong>
+</div>
+
+<div class = 'legend5'>
+<strong>Color_code:5</strong>
+</div>
+
+</div> 
+<br>
+<br>
+
+<div class="blogs">
+
+
+  <% @items.each do |item| %>
+  
+   
+    <%= render item %>
+  
+
+  
+  
+  <% end %>
+
+  </div>
+  </div>
+  <br>
+  <br>
+  <p><%= link_to "New Item", items_new_path,class:"btn btn-success" %></p>
+
+</div>
+
