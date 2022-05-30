@@ -7,6 +7,7 @@ ruby "3.0.0"
 gem "rails", "~> 7.0.3"
 gem "pry"
 gem 'faker', '~> 2.21'
+gem 'sass-rails'
 
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
