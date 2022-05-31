@@ -1,0 +1,70 @@
+.tags{
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    
+}
+.taginner{
+
+    margin-left: 10px;
+ border-radius: 12px;
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.46);
+ padding-left: 20px;
+ padding: 10px;
+}
+
+.show{
+    margin-bottom: 5px;
+  
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+     /* border:2px solid; */
+    height:10px;
+    width:auto
+    
+} 
+ 
+.indexinner{
+    
+margin-left: 5px; 
+ border-radius: 12px;
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.46);
+ padding-left: 10px;
+ padding: 10px;
+ height: auto;
+  width: auto;
+
+
+ }   
+ .show1{
+    bottom: 10;
+    margin-left: 10px;
+    margin-top: 55px;
+    
+
+ }   
+
+ .partial_tag
+ {
+     height:250px
+ }      
+ .indexinner a{
+     position: relative;
+     bottom: 10;
+     right: 0;
+     border: 2px solid;
+     background-color: rgb(15, 128, 52); 
+     padding-top: 5px;
+     margin-bottom: 15px;
+     text-align: end;
+       margin-top: 3px;  
+     }
+#rambro{
+    height: 100px;
+    overflow:scroll;
+}

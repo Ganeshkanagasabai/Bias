@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Items</h1>
+<p><%= link_to "New Item", new_item_path,class:"btn btn-success" %></p>  
+<br>
+<br>
+
+<div class="blogs">
+
+  <% @items.each do |item| %>
+    <%= render item %>
+
+  
+  
+  <% end %>
+  </div>
+
+
+

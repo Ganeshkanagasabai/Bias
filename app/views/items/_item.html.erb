@@ -1,0 +1,27 @@
+<div class ="indexinner">
+    <strong>Name:</strong>
+    <%= item.name %>
+ 
+
+  <p>
+    <strong>Description:</strong>
+    <%= item.description %>
+  </p>
+  
+    <p>
+    <strong>Example:</strong>
+    <%= item.example %>
+  </p>
+
+
+  <p>
+    
+    <%= image_tag item.image %>
+  </p>
+
+  <div id="rambro">
+ <%# <%= render item.tags %> 
+ </div>
+
+ <%= link_to "Show this item",item,class:"btn btn-primary" %>
+</div>
