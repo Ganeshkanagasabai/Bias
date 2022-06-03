@@ -46,6 +46,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # educes boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem 'bootstrap_jt', '~> 0.1.0'
 
 
 group :development, :test do
