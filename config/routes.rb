@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   get 'items/new'
   get 'items/edit'
   get 'items/show'
+
   
 end
